@@ -1,0 +1,56 @@
+Histoire :
+
+Mon poème préféré est de Tess Gallagher. Il s'intitule Each Bird Walking.
+https://www.ronnowpoetry.com/contents/gallagher/EachBirdWalking.html
+Je l'ai découvert pendant mon stage. A l'époque j'achetais toutes les anthologies de poésie que je pouvais trouver.
+Ce livre-ci, c'était un volume de poésie américaine, un volume que j'avais trouvé à New-York, dans une vieille librairie de Manhattan qui n'existe plus.
+J'avais mangé un pho de poisson chat dans le quartier chinois et zigzagué jusqu'à mon hôtel et j'étais rentré là par hasard, 
+même si, je l'apprendrais plus tard, c'était une librairie très célèbre.
+Dans les rayons j'avais erré, feuilleté, puis choisi ce livre parce qu'il était gros et pas cher. 
+Le soir même je l'enfonçais dans ma valise et je l'oubliais pendant quelques mois.
+Je ne l'ai enfin lu que pendant le confinement. J'étais en stage, ce stage qui a été à l'origine de cette aventure, 
+et je n'avais pas grand-chose le soir venu.
+J'ai donc commencé à vider ma pile d'anthologies.
+Je ne sais pas, alors, ce qui m'a plu dans ce poème, et je ne sais toujours pas. Ce qui m'a précisément plu n'a en fait pas d'importance. Il m'a plu, voilà tout.
+Mais quatre ans et demi plus tard, il m'arrive souvent de relire ce poème, d'essayer de capturer ses rythmes, ses répétitions, ses images.
+Je ne capture rien, mais il me plait toujours autant. 
+Je ne sais pas non plus ce qui m'a plu, ici, à l'ISIR, avec vous, et je crois que mettre des mots dessus n'a pas d'importance.
+Mais je vais essayer d'y mettre un peu de sens.
+William Carlos Williams disait que l'on pouvait faire d'une liste de course un poème, que ce qui comptait, c'était le sens qu'on y mettait, le souffle.
+Alors j'ai pris la liste des membres du Discord et je me suis dit que, pour moi, cette liste pouvait, en fait, être un poème.
+
+
+
+Code :
+
+Afin de customiser un peu cette liste, Alexis veut associer à chacun de ses cobureaux un petit adjectif !
+Attribuons un score à chaque prénom et chaque adjectif. 
+
+Ce score est composé de deux nombres.
+
+Le premier nombre s'obtient en additionnant les lettres en commun avec Alexis.
+Pour chaque -a ajouter 1 point, chaque -l 2 points, ... chaque -s 6 points.
+Par exemple, "Positivité" possède 3-i, 1-s et 1-e, soit 3*5 + 1*6 + 1*3 = 24 points !
+
+Le deuxième nombre s'obtient en prenant les lettres en commun avec Negatif.
+Pour chaque -n, ajouter 1 point, chaque -e 2 points... chaque -f 7 points.
+Par exemple, "Positivite" possède 3-i, 1-t et 1-e, soit 3*6 + 1*5 + 1*2 = 25 points !
+
+Le score total est la concaténation de ces deux nombres, 24 et 25, dans cet ordre.
+Pour "Positivite", le score total est 2425 !
+Des score de 1 et 15 seraient concaténés en 115.
+On fera donc attention aux scores avec des zéros : 01 = 1 mais 10 = 10 !
+
+Associez enfin chaque prénom et chaque adjectif selon leurs scores dans l'ordre croissant.
+Le nom au score le plus faible avec l'adjectif au score le plus faible, le 2e adjectif avec le 2e nom, etc.
+
+Les noms sont listés dans noms.txt
+Les adjectifs dans adjectifs.txt
+
+Attention aux majuscules !
+
+
+
+Question :
+
+Qui sont les Capitaine, Neofuturiste, Beatnik et Excesdevitesse ? (1pt)

@@ -1,0 +1,56 @@
+Histoire :
+
+Mon livre de photographie préféré s'intitule Attempting Exhaustion de Daniel Blaufuks.
+Je l'ai acheté pendant mon année d'ingénieur à l'ISIR, via une galerie japonaise.
+https://www.akionagasawa.com/en/shop/books/akionagasawa/attempting-exhaustion/
+Pendant sept ans, l'artiste a photographié la fenêtre de sa cuisine, la lumière changeante sur la table, sur une pomme, un oeuf.
+Ce livre m'a profondément inspiré, peut-être transformé d'une certaine manière.
+Je ne me lassais pas de regarder ces photos.
+C'est un peu ça, parfois, à l'ISIR, les petits jours qui se ressemblent, les légères variations...
+
+En pensant à ce livre, je commençais un jour une nouvelle :
+
+"De nouveau, des photos se superposaient : de faibles variations : la manière d’absorber la lumière, 
+le grain des textures, les silences. On y lisait des instants, des mouvements : - des expositions, 
+des parcs, des bords de fleuves ; - une table de cuisine, une nappe en boule où plongeait la lumière du matin ; 
+- une grande fenêtre structurée, des tasses à café, un bol d’amandes ; - de l’autre côté une certaine agitation, 
+le printemps, ou plutôt, des éclats du printemps ; - M. qui frotte lentement ses paumes l’une contre l’autre, 
+qui joint ses genoux, qui sort les œufs d’une casserole fumante, les écale avec patience."
+
+A l'époque, j'aimais beaucoup jouer avec la ponctuation, aujourd'hui, étrangement, je l'emploie avec parcimonie.
+Peut-être me parait-elle désormais prétentieuse. Cette nouvelle, d'ailleurs, n'a jamais été terminée.
+
+En reparcourant les images du groupe Discord, je suis retombé sur une vieille photo de notre week-end à Cestas.
+J'ai essayé de la regarder, avec précaution, comme je l'ai fait pour le livre de Blaufuks.
+Je l'ai tournée, retournée, je voulais capter la lumière sous un angle nouveau, le souvenir... ah ! on avait
+d'autres coupes de cheveux, ces années qui sont passées si vite, ces petites rides qui n'étaient pas là... 
+et, sans le vouloir, je me suis endormi sur le clavier.
+J'ai dû avoir un rêve agité, car j'ai tapé sur tout un tas de touches...
+et l'image a été corrompue par ma mauvaise manipulation ! Il faudrait m'aider à récupérer le fichier.
+
+
+
+Code :
+
+L'image a été encodée par une manipulation hasardeuse.
+Afin de la décoder, voici les étapes à suivre.
+Tout d'abord, il vous faudra une clef, la clef est obtenu en récupérant les signes de ponctuation dans le paragraphe de la nouvelle ci-dessus,
+aussi fourni dans le fichier key.txt
+**Hint : Il vous faudra enlever aussi bien les lettres (en regex: \w) que les espaces (\s)**
+
+Pour chaque signe de ponctuation, consider son nombre ascii associé et multiplier tous ces nombres entre eux.
+Multiplier enfin ce nombre par 1996, puis prendre son modulo par 1705, et de nouveau son modulo par 256.
+Voici la clef.
+
+Par exemple, le nombre associé à "+" est 43, et celui associé à "!" est 33. Le nombre associé à "+!" est donc 33*43 = 1419
+La clef associée à "+!" serait : (1419 * 1996) % 1705 % 256 = 63
+
+Enfin, appliquer un XOR au tableau de byte associé à l'image.
+Par exemple, si la valeur est 217 et la clef 63, alors 217 XOR 63 = 230, la bonne valeur de l'image.
+https://nitratine.net/blog/post/xor-python-byte-strings/
+
+
+
+Question :
+
+Qu'est-ce qui est écrit sur l'image ? (2 pt)
