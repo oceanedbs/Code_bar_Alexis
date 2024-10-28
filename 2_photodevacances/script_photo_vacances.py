@@ -37,6 +37,7 @@ print(puctuation)
 res=1
 for p in puctuation:
     res *= get_ascii_code(p)
+    print(get_ascii_code(p))
 final_res = (res  * 1996) % 1705 % 256
 print(final_res)
 
