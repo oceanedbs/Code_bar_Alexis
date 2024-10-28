@@ -1,4 +1,6 @@
 import string
+from PIL import Image
+import io
 
 def get_punctuation(input_string):
     return ''.join([char for char in input_string if char in string.punctuation])
@@ -26,9 +28,6 @@ def xor_bytes(data: bytes, key: int) -> bytes:
         res.append(d^key)
     return res
 
-def byte_table_to_int_table(byte_table):
-    return [int.from_bytes(byte, byteorder='big') for byte in byte_table]
-
 # Get punctuation
 puctuation = get_punctuation(file_content)
 print(puctuation)
@@ -52,3 +51,7 @@ print(new_image[:10])
 
 output_path = '2_photodevacances/new_image.jpg'
 save_as_jpeg(bytes(new_image), output_path)
+
+
+image = Image.open(io.BytesIO(bytes(new_image)))
+image.show()
