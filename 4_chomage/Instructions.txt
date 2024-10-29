@@ -1,0 +1,34 @@
+Histoire :
+
+Maintenant que je me retrouve au chômage il va falloir que je m'occupe.
+Plus de petits jeux entre collègues, plus de cafés, de parties d'échecs derrière mon bureau.
+Peut-être, je vais prendre le temps d'écrire, finir le roman que je n'ai jamais fini,
+et lire aussi, dépiler la pile que j'ai dernièrement regarni. Il faut aussi que je pense à
+déménager, l'élément le plus critique c'est ma bibliothèque. J'ai de moins en moins place,
+je me suis même abaissé à mettre les livres à l'horizontal sur les livres à la verticale.
+Ah, je déteste ça, tous ces livres mal rangés !
+Je peux vous dire que ça me fait mal. Mais c'est mieux que de les laisser trainer à même le sol.
+
+Code :
+
+Alexis souhaite optimiser le rangement des livres dans sa bibliothèque.
+Les livres sont listés dans livres.txt
+Chaque ligne correspond à un livre.
+Par exemple : LesDetectivesSauvages 30 1055 est un livre portant le nom de Détectives Sauvages, de 30 cm de haut et de 1055 pages.
+1000 pages équivaut à 10cm de large.
+
+Alexis souhaite ranger tous ses livres dans des bibliothèques Ikea.
+Il doit se rendre le lendemain au magasin et acheter les meubles.
+Les meubles disponibles sont listés dans meubles.txt
+
+Skubluk 100 350 25 est par exemple un meuble dont le rangement est de 100cm de haut et 350cm de large.
+Et il coûte 25 euros.
+Comme Alexis n'aime pas le vide, il veut qu'un livre soit rangé dans une étagère de hauteur suffisante mais pas trop grande.
+S'il y a des étagères de 15, 25 et 35 cm, un livre de 22 cm ira obligatoirement dans une étagère de 25 cm, ni 15 ni 35.
+
+Alexis demande conseille à Robin, qui est devenu un expert IKEA. Robin lui donne très vite le nombre de meubles et le prix.
+
+Question :
+
+En mettant bout à bout les livres (sans prendre en compte les possibles trous), combien de meubles faut-il au minimum ?
+Combien cela va-t-il couter à Alexis ? (3pt)

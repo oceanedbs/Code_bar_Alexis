@@ -1,0 +1,17 @@
+Salade Entree 1 00 150
+Carottes Entree 2 10 140
+Nems Entree 5 32 83
+ConcombreFeta Entree 10 56 92
+SaumonFume Entree 35 75 82
+RizPatate Plat 1 00 150
+CrumbleSucre Plat 2 00 150
+ChouxFarci Plat 10 60 130
+DahlCurry Plat 30 70 80
+FishNChips Plat 30 90 100
+Pizza Plat 55 101 102
+Pruneaux Dessert 0 00 150
+PoiresChantilly Dessert 5 18 72
+TarteChocolat Dessert 7 45 93
+MousseChocolat Dessert 20 52 72
+CharlotteMeringue Dessert 25 83 102
+BeignetChocolat Dessert 30 110 120

@@ -1,0 +1,60 @@
+Histoire :
+
+Vous connaissez mon amour pour la nourriture !
+L'histoire remonte à ma naissance. Mon père la raconte souvent et, peut-être, pour lui faire plaisir, je la raconte aussi.
+Je suis né prématuré avec un mois et demi (imaginez si j'avais été fini ! encore plus chiant).
+En couveuse, mon père rend un jour visite à l'infirmière. Lorsqu'il voit qu'elle a préparé mon biberon alors que je dors encore,
+il lui demande pourquoi. Elle lui répond que, quand je me réveille et que j'ai faim, si on ne me donne pas à manger
+dans la minute qui suit, je deviens tellement en colère que je refuse de manger !
+Pendant les vingt années qui ont suivi où j'ai diné avec mes parents, je suppose que j'ai posé la question :
+"Quand est-ce qu'on mange" et "A quelle heure on mange" au moins une fois par jour.
+La question de quoi, je ne peux pas trop vous la poser, mais celle de l'heure.
+Ah ! qu'est-ce que j'ai pu vous faire chier avec ça.
+
+Mais revenons-en à aujourd'hui, là, tout de suite.
+Le CROUS, c'est pas trop mal quand même, bon rapport qualité prix.
+Bon c'est pas Césure mais je peux pas m'envoyer entrée-plat-dessert tous les jours... quoique...
+Non, non, soyons raisonnables. Le CROUS c'est bien, et c'est une bonne raison pour enchainer sur un goûter.
+Ah... la forêt noire du Stube ! les choux à la flouve de Tapisserie ! et puis...
+Non, non, on a dit raisonnables...
+Ce midi on va au CROUS !
+
+
+
+Code :
+
+Trop tard, Alexis a faim. Il veut optimiser l'heure à laquelle il doit arriver au CROUS.
+Pour cela, il a pris des notes pendant toutes ces années !
+Le document queue.txt indique à chaque minute le nombre de personnes qui se rajoutent à la queue.
+Sachant que 10 personnes passent par minutes.
+Le temps est compté en minutes et commence à 00 pour 11h30 et se termine à 150 pour 14h00.
+Par exemple :
+
+00 0
+01 8
+02 12
+03 9
+
+Indique que 0 personnes arrivent la première minute, 8 la seconde, 12 la troisième et 7 la dernière.
+Comme 10 personnes peuvent passer maximum, le nombre de personnes dans la queue est donc de :
+0 à 00
+0 à 01 (elles sont toutes passées)
+2 à 02 (sur les 12, 10 sont passées)
+1 à 03 (sur les 2 anciennes + 9 nouvelles, 10 sont passées)
+
+Si Alexis arrive quand il y a entre 0 et 9 personnes, il attendra 0 mn, entre 10 et 19, 1 mn, etc...
+
+Chaque minute passée dans la queue diminue le bonheur d'Alexis de 2 point.
+
+Ensuite, le document nourriture indique chaque item disponible.
+Alexis veut prendre une entrée, un plat et un dessert.
+Tiramisu Dessert 15 est par exemple un dessert qui lui fournit 15 points de bonheur.
+
+Cependant, les items ne sont généralement disponibles que selon certaines plages horaires ! surtout les plus demandés !
+Ainsi : Tiramisu Dessert 15 25 52 n'est disponible qu'entre la 25e et 52e minute incluses !
+
+
+
+Question :
+
+A quelle heure doit arriver Alexis, combien de temps passe-t-il dans la queue, que mange-t-il et quel est son niveau de bonheur ? (3pts)

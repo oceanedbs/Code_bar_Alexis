@@ -1,0 +1,52 @@
+Histoire :
+
+La pause c'est un élément sacré de la journée. L'enlever, ce serait comme nous retirer notre âme.
+Je ne sais pas combien de pauses on a pu faire. Au printemps et en automne on allait au solarium.
+L'hiver le petit coin de soleil sous la barre. Quand il faisait très froid on s'enfermait dans les bureaux.
+Je vous parle de ça, c'était avant le déménagement, dans la pyramide. Chaque semaine quelqu'un ramenait un gâteau.
+Les jours de gâteau, c'était, et c'est toujours, les jours où on bénit les dieux de la thèse.
+Mais y avait aussi les jours où on se faisait attraper juste avant la pause, ça, c'était moins rigolo.
+Les plus jeunes vont avoir dû mal à le croire mais, oui, il fut un temps où on se faisait attraper par nos encadrants !
+Le Nathrapage était le plus célèbre de tous, de préférence juste avant le CROUS ou avant la pause.
+
+
+
+Code :
+
+Océane cherche à ne pas se faire Nathrapper pour avoir du gâteau (les noms ont peut-être été échangées afin de
+préserver un certain anonymat). Elle décide de jeter sous les roues de Nath ses autres ingénieurs et doctorants :
+Robin, Apolline, Sébastien, Oryane et Julian.
+
+Nath est à la poursuite de Océane pour des photos Cybathlon, il est décidé ! Océane doit vite trouver un chemin...
+Le bureau d'Océane est le bureau A101, la salle de pause est en Z103, respectivement les points de départ et d'arrivée.
+
+Le fichier bureaux.txt contient une liste de tous les bureaux et des liens entre eux. Par exemple :
+J453: J338(6), J162(7), J385(4)
+indique que le bureau J453 est connecté aux bureaux J338, J162 et J385
+et que aller dans ces derniers prend respectivement 6, 7 et 4 mn (il faut se cacher ! ça prend du temps !)
+Note : les couloirs s'empruntent à sens unique
+
+Il faut trouver une stratégie qui prend le moins de temps. Par exemple pour un graphe :
+
+A101: J1(1)
+J1: J2(1)
+J2: J3(4), J4(2)
+J3: J5(1)
+J4: J5(10)
+J5: Z103(1)
+Z103: J5(1)
+
+Le chemin le plus court serait ici de passer en J1, J2, J3, J5 et d'arriver en Z103
+Mais si Julian la pipelette se trouvait en J4, peut-être faudrait-il y passer...
+
+Questions :
+
+Combien de temps faut-il à Océane pour aller en salle de pause si elle ne cherche à croiser personne ? (2 pts)
+
+Cette solution est trop longue ! Océane décide donc de croiser tout le monde pour pouvoir foncer sans se cacher !
+
+Robin, Apolline, Sébastien, Oryane, Julian se trouvent en :
+J102, J12, J317, J243, J455 respectivement
+
+En croisant tout le monde (Robin, Apolline, Sébastien, Oryane et Julian) une fois, chaque croisement retirant 53 mn de temps,
+combien de temps faut-il désormais à Océane ? (2 pts)

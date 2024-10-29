@@ -1,0 +1,46 @@
+Histoire :
+
+Des week-ends, on en a fait ! A Cestas donc, mais aussi à Potelle, à Savonnières.
+Souvent, il faut l'avouer, on buvait un peu. Quand le punch était bon, pas besoin de se forcer.
+Parfois, il fallait un petit supplément de convivialité.
+Je me souviens qu'on jouait alors à Not Enough Mana, et qu'on finissait par y voir un peu trouble.
+(je ne dirais pas qui longeait les murs avec sa bouteille d'eau à la main)
+
+C'est un jeu simple : vous êtes des magiciens qui devez lancer des sorts ! Pour recharger vos pouvoirs, buvez !
+L'autre jour, je me baladais dans le Père-Lachaise (où, certains d'entre vous le savent, j'aime bien lire)
+et je suis tombé sur la tombe d'un vieux sorcier. Sur cette tombe, il y avait de vieilles instructions...
+
+Je pense que ce sont de nouveaux sorts !
+Peut-être m'aideront-ils à gagner la prochaine partie de Not Enough Mana ?
+
+
+
+Code :
+
+Chaque sort possède un coût qui lui associé, et le nombre de dégâts qu'il provoque. Ils sont listés en ligne.
+Devenirdocteur 1705 1996 nécessite par exemple 1705 de mana pour être lancé, et inflige 1996 dégâts à l'adversaire.
+Une fois un sort lancé, le mana nécessaire est perdu. Lancé Devenirdocteur en ayant 1800 points de mana aboutit à n'avoir plus que 95 points.
+Les sorts sont listés dans sorts.txt
+
+Pour gagner du mana, il faut boire. Chaque alcool possède une dose d'alcool, un degré de folie et un nombre de points de mana.
+Vodka 40 10 127 a une dose d'alcool de 40, nécessite d'avoir déjà bu 10 doses d'alcools (le degré de folie !), et rapporte 127 points de mana.
+On ne peut donc pas commencer par boire de la vodka directement !
+Bière Cerise 1 0 2 a une dose d'alcool de 1, ne nécessite pas d'avoir bu au préalable, et rapporte 2 points de mana.
+Pour boire de la vodka, il faut donc d'abord boire 10 bières cerises ! 
+Les alcools sont dans alcools.txt
+
+Il y a deux joueurs. Pendant chaque tour, un joueur peut choisir de boire ou d'attaquer.
+Une seule action peut-être effectuée par tour, soit boire, soit attaquer.
+Un joueur ne peut pas passer son tour, s'il n'attaque pas, il doit boire obligatoirement !
+
+
+
+Question :
+
+Guillaume est un attaquant, il préfère boire et lancer des sorts à tout va.
+Il se donne dix tours pour finir son adversaire et il est capable d'encaisser les verres sans limite. 
+Combien de dégats maximum peut-il infliger au maximum en 10 tours ? (2 pts)
+
+Alexis est un défenseur, il boit raisonnablement et son corps épure vite l'alcool.
+Il préfère prendre son temps et se fixe un taux d'alcool bu maximal.
+Sans dépasser un maximum de doses d'alcool bues de 75, combien de dégats peut-il infliger au maximum après 15 tours ? (3 pts)
