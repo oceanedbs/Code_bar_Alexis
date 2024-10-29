@@ -13,6 +13,7 @@ nourriture_data.columns = ["Plat", "Type", "Bonheur", "Tps_min", "Tps_max"]
 queue = 0
 queue_evolution = []
 hapiness_evolution = []
+waiting_time_evolution = []
 meal_evolution = []
 waiting_time = 0
 for i, q in queue_data.iterrows():
@@ -36,13 +37,14 @@ for i, q in queue_data.iterrows():
         if not p.empty:
             hapiness_level += p["Bonheur"].values[0]        
             optimal_meal.append(p["Plat"].values[0])
-        print("hapiness_level")
-        print(hapiness_level)
-        hapiness_level -= waiting_time*2
+      
+    hapiness_level = hapiness_level - waiting_time*2
     hapiness_evolution.append(hapiness_level)
     meal_evolution.append(optimal_meal)
+    waiting_time_evolution.append(waiting_time)
 plt.plot(hapiness_evolution, label="hapiness")    
 plt.plot(queue_evolution, label="queue")
+plt.plot(waiting_time_evolution, label="waiting_time")
 plt.legend
 plt.show()
 
